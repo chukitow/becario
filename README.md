@@ -4,8 +4,8 @@ Log your redmine hours from a csv file
 
 ## Requirements
 
-    * Firefox browser
-    * Ruby >= 2.1.3
+* Firefox browser
+* Ruby >= 2.1.3
 
 ## Installation
 
@@ -32,11 +32,11 @@ date,ticket,hours,comments,activity
 "2016-07-18",20164,".5","Standup meeting","Meeting"
 ```
 
-    1. date: Date to log activity
-    2. ticket: Ticket's number
-    3. hours: Number of hours to log
-    4. comments: Comments to add in the log
-    5. activity: Activity type, e.g Development, Meeting, Reporting
+1. date: Date to log activity
+2. ticket: Ticket's number
+3. hours: Number of hours to log
+4. comments: Comments to add in the log
+5. activity: Activity type, e.g Development, Meeting, Reporting
 
 ## Usage
 
