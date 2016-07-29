@@ -2,6 +2,11 @@
 
 Log your redmine hours from a csv file
 
+## Requirements
+
+    * Firefox browser
+    * Ruby >= 2.1.3
+
 ## Installation
 
 Install it yourself as:
