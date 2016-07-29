@@ -1,26 +1,50 @@
 # Becario
 
-TODO: Write a gem description
+Log your redmine hours from a csv file
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'becario'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
+Install it yourself as:
 
     $ gem install becario
 
+Install Selenium Standalone with node
+
+    $ npm install selenium-standalone@latest -g
+    $ selenium-standalone install
+    $ selenium-standalone start
+## CSV
+
+Create a csv file with the following format including headers
+```csv
+date,ticket,hours,comments,activity
+```
+
+Example:
+
+```csv
+date,ticket,hours,comments,activity
+"2016-07-18",20164,".5","Standup meeting","Meeting"
+```
+
+    1. date: Date to log activity
+    2. ticket: Ticket's number
+    3. hours: Number of hours to log
+    4. comments: Comments to add in the log
+    5. activity: Activity type, e.g Development, Meeting, Reporting
+
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+require 'becario'
+
+# Set configuration
+Becario.redmine_url = 'https://mycompany.logs.com/redmine'
+Becario.credentials = {username: 'myUsername', password: 'myPassword'}
+Becario.csv = '/path/to/csv/file'
+
+Becario.run
+```
 
 ## Contributing
 
