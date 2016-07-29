@@ -41,6 +41,8 @@ date,ticket,hours,comments,activity
 ## Usage
 
 ```ruby
+#becario.rb
+
 require 'becario'
 
 # Set configuration
@@ -51,6 +53,10 @@ Becario.csv = '/path/to/csv/file'
 Becario.run
 ```
 
+Then
+```shell
+ruby becario.rb
+```
 ## Contributing
 
 1. Fork it ( https://github.com/[my-github-username]/becario/fork )
