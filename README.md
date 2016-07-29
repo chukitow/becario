@@ -13,7 +13,7 @@ Install it yourself as:
 
     $ gem install becario
 
-Install Selenium Standalone with node
+Install and run Selenium Standalone with node
 
     $ npm install selenium-standalone@latest -g
     $ selenium-standalone install
